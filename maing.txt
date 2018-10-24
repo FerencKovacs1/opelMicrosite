@@ -1,0 +1,91 @@
+<body>
+  <div class='header'>
+    <div>
+      <!-- <img src='https://s31.postimg.org/t5tcqeebf/applelogo.png' alt='apple logo'> -->
+      <ul>
+        <li>Mac</li>
+        <li>iPhone</li>
+        <li>iPad</li>
+        <li>Watch</li>
+        <li>TV</li>
+        <li>Music</li>
+        <li>Support</li>
+      </ul>
+      <!-- <img src='https://s31.postimg.org/aerffs9bv/applesearch.png' alt='apple search'>
+      <img src='https://s31.postimg.org/rs1puqziz/applebag.png' alt='apple bag'> -->
+    </div>
+  </div>
+
+  <div class='xcontainer'>
+    <div id='x'>iPhone X</div>
+    <div id='xhello'>Say hello to the future.</div>
+    <div id='xpic'>
+      <img src='https://s31.postimg.org/c5aghhgmz/iphonex.png' alt='iPhone X'>
+    </div>
+  </div>
+  <div class='watchcontainer'>
+    <span id='imagination'>Imagination is a gift.</span>
+    <div id='shopwatch'>Shop last minute gifts.</div>
+    <div id='watch'>
+      <img src='https://s31.postimg.org/hw0mvaonv/applewatch.png' alt='Apple Watch'>
+    </div>
+  </div>
+
+  <div class='macgrid'>
+    <div class='imac'>
+      <div class='headtext'>iMac Pro</div>
+      <div class='subheadtext'>Available now.</div>
+      <img src='https://s31.postimg.org/x60i27wy3/imac.png' alt='iMac' id='imac'>
+    </div>
+    <div>
+      <div class='iphone8'>
+        <div class='headtext'>iPhone 8</div>
+        <div class='subheadtext'>A new generation of iPhone.</div>
+        <img src='https://s31.postimg.org/cxd4h0kxn/iphone8.png' id='iphone8pic'>
+      </div>
+    </div>
+
+    <div class='iwatch'>
+      <img src='https://s31.postimg.org/heeo6zqq3/applewatchlogo.png' class='topimg'>
+      <div>Freedom calls.</div>
+      <img src='https://s31.postimg.org/heeo72j17/applewatchimage.png'>
+    </div>
+    <div class='fourk'>
+      <img src='https://s31.postimg.org/rbpp07iy3/apple4ktv.png' class='topimg'>
+      <div>The 4k HDR era. Now playing.</div>
+      <img src='https://s31.postimg.org/sdzvipc17/apple4ktvimage.png' id='tv'>
+    </div>
+    <div class='ipadpro'>
+      <div class='headtext'>iPad Pro</div>
+      <div class='subheadtext'>Anything you can do, you can do better</div>
+      <img src='https://s31.postimg.org/hsg06gdcr/ipadpro.png'>
+    </div>
+    <div>
+      <div class='absoluted'>
+        <div class='subheadtext'>Move someone</div>
+        <div id='holiday'>this holiday.</div>
+        <div id='watchsway'>Watch "Sway"</div>
+      </div>
+      <img src='https://s31.postimg.org/xhr56y55n/applesway.png' id=sway>
+    </div>
+  </div>
+  <div class='credits'>
+    <div></div>
+    <div>
+      <p><strong>Shop and Learn</strong></p>
+    </div>
+    <div>
+      <p><strong>Apple Store</strong></p>
+    </div>
+    <div>
+      <p><strong>For Education</strong></p>
+    </div>
+    <div>
+      <p><strong>Account</strong></p>
+    </div>
+    <div>
+      <p><strong>About Apple</strong></p>
+    </div>
+    <div></div>
+  </div>
+</body>

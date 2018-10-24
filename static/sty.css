@@ -1,0 +1,251 @@
+body {
+  background-color:#FAFAFA;
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #323232;
+  opacity: 96;
+  height: 2.8em;
+  width: 100%;
+  color: #FAFAFA;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+
+}
+
+#logo{
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  width: 15%;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+li {
+  padding-right: 2em;
+  padding-left: 1em;
+  display:inline;
+}
+
+li:hover {
+  color: #959595;
+}
+
+
+.containerOne {
+  text-align:center;
+  color: #111111;
+  padding-top: 4em;
+  background-color: ;
+}
+
+#OneMainText {
+  font-size: 55px;
+  font-weight:900;
+
+}
+
+#OneSubText {
+  margin-top:.5em;
+  font-size: 30px;
+  font-weight:500;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.containerTwo {
+  text-align:center;
+  color: #111111;
+  padding-top: 4em;
+  background-color: ye
+}
+
+
+#TwoMainText {
+  font-size: 55px;
+  font-weight:900;
+
+}
+
+#TwoSubText {
+  margin-top:.5em;
+  font-size: 30px;
+  font-weight:500;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+
+
+#imagination {
+  font-size: 55px;
+  font-weight: 900;
+}
+
+#shopwatch {
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.cargrid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+}
+
+/* ROW ONE */
+
+.blockfirst {
+  text-align:center;
+  background-color: #1A1A1A;
+  color: #FAFAFA;
+}
+
+#block-first-pics {
+  margin-top: 3em;
+}
+
+.blocksecond {
+  text-align:center;
+  background-color: #1A1A1A;
+  color: #FAFAFA;
+}
+
+.headtext {
+  font-size: 40px;
+  font-weight: 700;
+  padding-top:1.25em;
+}
+
+.subheadtext {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#block-second-pics {
+  margin-top: 3em;
+  height: 469px;
+}
+
+#tv {
+  height: 469px;
+}
+
+/* ROW TWO */
+
+.blockthird {
+  text-align:center;
+  background-color: #1A1A1A;
+  color: #FAFAFA;
+}
+
+.blockfourth {
+  text-align:center;
+  background-color: #1A1A1A;
+  color: #FAFAFA;
+}
+
+/* ROW THREE */
+
+.blockfive {
+  text-align:center;
+  background-color: #1A1A1A;
+  color: #FAFAFA;
+}
+
+.topimg {
+  margin-top: 3em;
+}
+
+/* FIND BETTER IMAGE, STYLING */
+#sway {
+  width: 100%;
+}
+
+/* Abosolute Positioning for Sway Text, not best b/c no picture */
+
+.absoluted {
+  position:absolute;
+  top: 2463px;
+  left: 65%;
+  color:white;
+  font-size: 50px;
+}
+
+#holiday {
+  font-size: 40px;
+  font-weight: 700;
+  text-align:center;
+}
+
+#watchsway {
+  font-size: 20px;
+  text-align:center;
+  margin-top:.5em;
+}
+
+/* End */
+.flip-box {
+  perspective: 1000px;/* 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+
+.flip-box-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  background-color: yellow;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* read between the lines */
+}
+
+
+
+/* Style the back side */
+.flip-box-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-back2 {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
