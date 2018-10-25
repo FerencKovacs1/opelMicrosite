@@ -1,5 +1,5 @@
 body {
-  background-color:#FAFAFA;
+  background-color:white;
   padding:0px;
   margin:0px;
   width:100%;
@@ -8,18 +8,44 @@ body {
 }
 
 .header{
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   background-color: #323232;
-  opacity: 96;
+  opacity: 98%;
   height: 2.8em;
   width: 100%;
   color: #FAFAFA;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   z-index: 1;
 
+}
+
+
+a{
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--mainColor)), to(var(--mainColor)));
+  background: -webkit-linear-gradient(top, var(--mainColor) 0%, var(--mainColor) 100%);
+  background: -o-linear-gradient(top, var(--mainColor) 0%, var(--mainColor) 100%);
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -27,7 +53,6 @@ body {
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none
@@ -49,9 +74,6 @@ li:hover {
   color: #959595;
 }
 
-#linkfirst{
-}
-
 .containerOne {
   text-align:center;
   color: #111111;
@@ -69,8 +91,10 @@ li:hover {
   margin-top:.5em;
   font-size: 30px;
   font-weight:500;
-  animation-duration: 3s;
-  animation-delay: 2s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .containerTwo {
@@ -80,38 +104,31 @@ li:hover {
   background-color: ye
 }
 
-
-#TwoMainText {
-  font-size: 55px;
-  font-weight:900;
-
+.details{
+  text-align: center;
 }
 
-#TwoSubText {
-  margin-top:.5em;
-  font-size: 30px;
-  font-weight:500;
-  animation-duration: 3s;
-  animation-delay: 2s;
-}
-
-
-
-#imagination {
-  font-size: 55px;
-  font-weight: 900;
-}
-
-#shopwatch {
-  font-size: 27px;
-  font-weight: 500;
-}
 
 .cargrid {
+  display:-ms-grid;
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr ;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
   grid-row-gap: 1em;
   grid-column-gap: 1em;
+}
+
+@media (min-width: 900px){
+  .cargrid{
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 /* ROW ONE */
@@ -143,13 +160,7 @@ li:hover {
   font-weight: 200;
 }
 
-#block-second-pics {
-  margin-top: 3em;
-}
 
-#tv {
-  height: 469px;
-}
 
 /* ROW TWO */
 
@@ -182,20 +193,36 @@ li:hover {
   background-color: transparent;
   width: 100%;
   height: 500px;
-  perspective: 4000px;
+  -webkit-perspective: 4000px;
+          perspective: 4000px;
+
 }
 
-.flip-box-inner {
+@media (max-width: 900px){
+  .flip-box{
+    height: 300px;
+  }
+}
+
+
+
+.flip-box-inner{
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  -o-transition: transform 0.8s;
   transition: transform 0.8s;
-  transform-style: preserve-3d;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .flip-box-front,
@@ -206,30 +233,52 @@ li:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .flip-box-front {
-  background-color: #bbb;
+  background-color:#f7d900;
   color: black;
 }
+
+.flip-box-front2 {
+  background-color: #f7d900;
+  color: black;
+}
+
+.flip-box-front3 {
+  background-color: white;
+  color: black;
+}
+
+.flip-box-front4 {
+  background-color: #ffff;
+  color: black;
+}
+
+
 .flip-box-back {
-  background-color: yellow;
+  background-color: green;
   color: white;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 .flip-box-back2 {
-  background-image: url("opel1.png");
+  background-color: black;
   color: white;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 .flip-box-back3 {
-  background-color: yellow;
+  background-color: #f7d900;
   color: white;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 .flip-box-back4 {
-  background-color: yellow;
+  background-color: #F7D900;
   color: white;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
